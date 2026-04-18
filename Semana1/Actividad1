@@ -1,0 +1,57 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	// EJERCICIO 1
+	var name string = "Julissa"
+	var age int = 20
+	var carrera string = "Tecnologia de la informacion"
+	var semestre string = "sexto semestre"
+	var promedio float64 = 8.64
+	fmt.Printf("Hola, soy %s, tengo %d, Estudio %s, estoy en %s, mi promedio es %2f", name, age, carrera, semestre, promedio)
+}
+
+	// EJERCICIO 2
+{
+	const producto1 = 49
+	const producto2 = 29
+	const producto3 = 15
+	const total = producto1 + producto2 + producto3
+	const promedio = total / 3
+	const totaldesc =  float64(total) * 0.85
+
+	fmt.Println("Producto 1: $", producto1, "Producto 2: $", producto2, "Producto 3: $", producto3, "Total= $", total, "Promedio= $", promedio, "Total con descuento= $", totaldesc)
+}
+
+
+	// EJERCICIO 3
+//package main
+
+// import "fmt"
+
+// func main() {
+
+	var nombre string
+	var nota1, nota2 float64
+	var promedio float64
+
+	fmt.Print("¿Cómo te llamas? ")
+	fmt.Scan(&nombre)
+
+	fmt.Print("Ingresa tu nota 1: ")
+	fmt.Scan(&nota1)
+
+	fmt.Print("Ingresa tu nota 2: ")
+	fmt.Scan(&nota2)
+
+	promedio = (nota1 + nota2) / 2
+
+	fmt.Printf("%s, tu promedio es: %.2f\n", nombre, promedio)
+
+	if promedio >= 7 {
+		fmt.Println("Estado: APROBADO")
+	} else {
+		fmt.Println("Estado: REPROBADO")
+	}
