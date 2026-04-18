@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+// import "fmt"
+// import "bufio"
+// import "os"
+// import "strings"
+// import "strconv"
+// import "errors"
+
 func main() {
 
 	fmt.Println("==== CALCULADORA CIENTÍFICA v1.0 ====")
